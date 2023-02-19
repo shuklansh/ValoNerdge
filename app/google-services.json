@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "917800655003",
+    "firebase_url": "https://valonerdge-c70a1-default-rtdb.firebaseio.com",
+    "project_id": "valonerdge-c70a1",
+    "storage_bucket": "valonerdge-c70a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917800655003:android:8eba6f759704cd78ce8e3e",
+        "android_client_info": {
+          "package_name": "com.shuklansh.valonerdge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917800655003-bj6s8tu10unrcvr4coquderd2c6ao644.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8UtPANnVQM7gRz8pflZ17k26f8ojJwp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917800655003-bj6s8tu10unrcvr4coquderd2c6ao644.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
