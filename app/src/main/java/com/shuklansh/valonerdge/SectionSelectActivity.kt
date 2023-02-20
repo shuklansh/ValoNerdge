@@ -27,6 +27,7 @@ class SectionSelectActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_section_select)
+        supportActionBar?.hide()
 
         if(intent!=null){
             mapname=intent.getStringExtra("mapname").toString()
