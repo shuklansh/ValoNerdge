@@ -39,7 +39,9 @@ class SectionSelectActivity : AppCompatActivity() {
         siteSectionRecyclerView.layoutManager = LinearLayoutManager(this)
 
 
-        getSiteSectionData()
+        listOfSection = getSiteSectionData()
+        siteSectionRecyclerView.adapter = SiteSelectAdapter(listOfSection)
+
 
 
     }
@@ -54,11 +56,11 @@ class SectionSelectActivity : AppCompatActivity() {
 
 
                 for (eachMap in snapshot.child("sova").child(mapname).child(side).children){
-                    val nameOfSection = eachMap.key
+                    val nameOfSection = eachMap.value
                     if(nameOfSection != null){
                         //println("name of site section of map : ${mapname} , ${side} : ${nameOfSection}" )
                         //println("***********************************" )
-                        listOfSection.add(nameOfSection)
+                        listOfSection.add(nameOfSection.toString())
 
                     }
 
@@ -66,7 +68,6 @@ class SectionSelectActivity : AppCompatActivity() {
                 }
                 System.out.println(listOfSection)
 
-                siteSectionRecyclerView.adapter = SiteSelectAdapter(listOfSection)
 
                 //textboxstring = "The list of all section of side ( ${side} ) of map ( ${mapname} ) ( ${printListFun(listOfSection)} )"
                 //textbox.text = textboxstring
