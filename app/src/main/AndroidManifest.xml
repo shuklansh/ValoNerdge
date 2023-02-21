@@ -13,6 +13,13 @@
         android:theme="@style/Theme.ValoNerdge"
         tools:targetApi="31">
         <activity
+            android:name=".VideoGuideActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SectionSelectActivity"
             android:exported="false">
             <meta-data

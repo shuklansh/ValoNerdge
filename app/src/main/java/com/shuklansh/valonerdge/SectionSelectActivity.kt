@@ -20,6 +20,7 @@ class SectionSelectActivity : AppCompatActivity() {
 
 
     var listOfSection = mutableListOf<String>()
+
     val database : FirebaseDatabase = FirebaseDatabase.getInstance()
     val reference : DatabaseReference = database.reference
 
@@ -41,7 +42,7 @@ class SectionSelectActivity : AppCompatActivity() {
 
 
         listOfSection = getSiteSectionData()
-        siteSectionRecyclerView.adapter = SiteSelectAdapter(listOfSection)
+        siteSectionRecyclerView.adapter = SiteSelectAdapter(this,listOfSection , mapname , side)
 
 
 
@@ -57,7 +58,7 @@ class SectionSelectActivity : AppCompatActivity() {
 
 
                 for (eachMap in snapshot.child("sova").child(mapname).child(side).children){
-                    val nameOfSection = eachMap.value
+                    val nameOfSection = eachMap.key
                     if(nameOfSection != null){
                         //println("name of site section of map : ${mapname} , ${side} : ${nameOfSection}" )
                         //println("***********************************" )
@@ -82,7 +83,6 @@ class SectionSelectActivity : AppCompatActivity() {
 //                        println("***********************************" )
 //                    }
 //                }
-
 
 //                attack.text = attacktextfb
 //                defense.text = defensetextfb
