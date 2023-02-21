@@ -28,7 +28,10 @@ class AttackDefenseActivity : AppCompatActivity() {
         setContentView(R.layout.activity_attack_defense)
 
         supportActionBar?.hide()
-
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
 
 //        window.setFlags(
 //            WindowManager.LayoutParams.FLAG_FULLSCREEN,

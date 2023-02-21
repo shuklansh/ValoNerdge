@@ -45,10 +45,10 @@ class MapSelectActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-//        window.setFlags(
-//            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-//            WindowManager.LayoutParams.FLAG_FULLSCREEN
-//        )
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
 
         mapOne = findViewById(R.id.mapselect1)
         mapTwo = findViewById(R.id.mapselect2)

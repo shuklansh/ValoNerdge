@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.MediaController
 import android.widget.TextView
 import android.widget.VideoView
@@ -28,7 +29,10 @@ class VideoGuideActivity : AppCompatActivity() {
         setContentView(R.layout.activity_video_guide)
 
         supportActionBar?.hide()
-
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
         VideoName = findViewById(R.id.VideoLinkTextView)
         LineupVideo = findViewById(R.id.lineupVideoView)
 
