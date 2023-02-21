@@ -1,9 +1,12 @@
 package com.shuklansh.valonerdge
 
 import android.annotation.SuppressLint
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.MediaController
 import android.widget.TextView
+import android.widget.VideoView
 import com.google.firebase.database.*
 
 class VideoGuideActivity : AppCompatActivity() {
@@ -12,7 +15,9 @@ class VideoGuideActivity : AppCompatActivity() {
     lateinit var side : String
     lateinit var siteSection : String
 
-    lateinit var VideoLink : TextView
+    lateinit var mediaController: MediaController
+    lateinit var VideoName : TextView
+    lateinit var LineupVideo : VideoView
 
     val database : FirebaseDatabase = FirebaseDatabase.getInstance()
     val reference : DatabaseReference = database.reference
@@ -24,8 +29,8 @@ class VideoGuideActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        VideoLink = findViewById(R.id.VideoLinkTextView)
-
+        VideoName = findViewById(R.id.VideoLinkTextView)
+        LineupVideo = findViewById(R.id.lineupVideoView)
 
 
 
@@ -37,8 +42,21 @@ class VideoGuideActivity : AppCompatActivity() {
 
         reference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val linkofVid = snapshot.child("sova").child(mapname).child(side).child(siteSection).value as String
-                VideoLink.text = linkofVid
+                val linkofVid = snapshot.child("sova").child(mapname).child(side).child(siteSection).child("vidlink").value as String
+                val vidname = snapshot.child("sova").child(mapname).child(side).child(siteSection).child("vidname").value as String
+
+                VideoName.text = vidname
+
+                mediaController = MediaController(this@VideoGuideActivity)
+                mediaController.setAnchorView(LineupVideo)
+                val vid = Uri.parse(linkofVid)
+                LineupVideo.setMediaController(mediaController)
+                LineupVideo.setVideoURI(vid)
+                LineupVideo.start()
+                //LineupVideo.setVideoURI(Uri.parse(linkofVid))
+                //LineupVideo.start()
+
+
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -46,6 +64,8 @@ class VideoGuideActivity : AppCompatActivity() {
             }
 
         })
+
+
 
 
     }

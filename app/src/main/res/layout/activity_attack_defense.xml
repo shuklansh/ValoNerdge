@@ -19,7 +19,8 @@
             android:layout_marginBottom="60dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:background="#323232"
+            android:textColor="@color/white"
             android:textSize="40sp"
             android:layout_centerInParent="true"/>
 
@@ -28,16 +29,18 @@
             android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
+            android:background="#323232"
+            android:textColor="@color/white"
             android:textSize="40sp"
             android:layout_centerInParent="true"/>
 
         <TextView
+            android:layout_marginTop="10dp"
             android:id="@+id/defense"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:textColor="@color/black"
+            android:background="#323232"
+            android:textColor="@color/white"
             android:textSize="40sp"
             android:padding="10dp"
 

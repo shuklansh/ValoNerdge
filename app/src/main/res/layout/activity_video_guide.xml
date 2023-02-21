@@ -7,20 +7,30 @@
     tools:context=".VideoGuideActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_height="wrap_content">
+        android:orientation="vertical">
 
         <TextView
+            android:background="#323232"
+            android:textColor="@color/white"
             android:id="@+id/VideoLinkTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textSize="40sp"
+            android:layout_marginBottom="20dp"
             android:padding="10dp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <VideoView
+            android:id="@+id/lineupVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+
             />
 
 
