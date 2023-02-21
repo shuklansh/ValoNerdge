@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradient_vertical"
     android:layout_height="match_parent"
     tools:context=".MapSelectActivity">
 
@@ -14,24 +15,33 @@
         android:orientation="vertical">
 
         <RelativeLayout
+
             android:layout_width="wrap_content"
             android:layout_margin="10dp"
             android:layout_height="wrap_content">
+
             <ImageView
+
                 android:id="@+id/map1img"
-                android:layout_margin="5dp"
                 android:layout_width="300dp"
-                android:layout_height="120dp"
-                android:src="@mipmap/ic_launcher"
-                />
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="5dp"
+                android:foreground="@drawable/gradient_horizontal" />
+
             <TextView
                 android:id="@+id/mapselect1"
-                android:padding="10dp"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
                 android:textColor="@color/white"
-                android:textSize="40sp"
-                android:layout_centerInParent="true"/>
+                android:textSize="40sp" />
 
         </RelativeLayout>
 
@@ -40,14 +50,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <ImageView
+
                 android:id="@+id/map2img"
-                android:layout_margin="5dp"
                 android:layout_width="300dp"
-                android:layout_height="120dp"
-                android:src="@mipmap/ic_launcher"
-                />
+                android:layout_centerInParent="true"
+                android:foreground="@drawable/gradient_horizontal"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="5dp"
+                 />
             <TextView
                 android:id="@+id/mapselect2"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -65,11 +82,17 @@
             android:layout_height="wrap_content">
             <ImageView
                 android:id="@+id/map3img"
-                android:layout_margin="5dp"
                 android:layout_width="300dp"
-                android:layout_height="120dp"
-                android:src="@mipmap/ic_launcher"
-                />
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:foreground="@drawable/gradient_horizontal"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="5dp"
+                 />
             <TextView
                 android:id="@+id/mapselect3"
                 android:layout_width="wrap_content"

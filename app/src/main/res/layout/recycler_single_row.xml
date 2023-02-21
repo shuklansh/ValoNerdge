@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="20dp"
-    app:cardCornerRadius="5dp"
+    app:cardCornerRadius="0dp"
+    style="@style/AppBackgroundVertical"
     android:layout_height="wrap_content">
 
     <RelativeLayout
-        android:layout_gravity="center_horizontal"
         android:id="@+id/SiteSectionParentLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
 
 
         <TextView
-            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"
+            style="@style/BackgroundForAppHorizontal"
             android:id="@+id/siteSectionTextFB"
-            android:textStyle="bold"
-            android:padding="10dp"
-            android:background="#323232"
-            android:textColor="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"/>
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
 
-</androidx.cardview.widget.CardView>
+</RelativeLayout>
