@@ -60,13 +60,13 @@ class MapSelectActivity : AppCompatActivity() {
 
         reference.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
-                maponestring = snapshot.child("sova").child("ascent").key as String
-                maptwostring = snapshot.child("sova").child("haven").key as String
-                mapthreestring = snapshot.child("sova").child("split").key as String
+                maponestring = snapshot.child("sova").child("Ascent").key as String
+                maptwostring = snapshot.child("sova").child("Haven").key as String
+                mapthreestring = snapshot.child("sova").child("Split").key as String
 
-                mapOneImgLink = snapshot.child("sova").child("ascent").child("imglink").value as String
-                mapTwoImgLink = snapshot.child("sova").child("haven").child("imglink").value as String
-                mapThreeImgLink = snapshot.child("sova").child("split").child("imglink").value as String
+                mapOneImgLink = snapshot.child("sova").child("Ascent").child("imglink").value as String
+                mapTwoImgLink = snapshot.child("sova").child("Haven").child("imglink").value as String
+                mapThreeImgLink = snapshot.child("sova").child("Split").child("imglink").value as String
 
                 mapOne.text = maponestring
                 mapTwo.text = maptwostring

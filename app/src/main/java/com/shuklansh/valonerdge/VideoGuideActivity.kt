@@ -22,7 +22,10 @@ class VideoGuideActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video_guide)
 
+        supportActionBar?.hide()
+
         VideoLink = findViewById(R.id.VideoLinkTextView)
+
 
 
 
