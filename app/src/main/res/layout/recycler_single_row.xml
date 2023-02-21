@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="0dp"
-    style="@style/AppBackgroundVertical"
+    android:background="@drawable/gradient_verticalrounded"
     android:layout_height="wrap_content">
 
     <RelativeLayout
@@ -15,7 +15,7 @@
 
         <TextView
             android:layout_margin="25dp"
-            style="@style/BackgroundForAppHorizontal"
+
             android:id="@+id/siteSectionTextFB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

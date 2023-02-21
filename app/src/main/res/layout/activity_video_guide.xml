@@ -17,7 +17,7 @@
 
         <TextView
             android:id="@+id/VideoLinkTextView"
-            style="@style/BackgroundForAppHorizontal"
+            android:background="@drawable/gradient_verticalrounded"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

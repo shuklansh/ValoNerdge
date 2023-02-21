@@ -12,8 +12,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:background">@drawable/gradient_vertical</item>
+
     </style>
+    <style name="AppBackgroundVertical">
+
+        <item name="android:background">@drawable/gradient_vertical</item>
+
+    </style>
+
     <style name="BackgroundForAppHorizontal">
 
         <item name="android:background">@drawable/gradient_horizontal</item>
