@@ -16,6 +16,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:textAlignment="center"
             android:id="@+id/VideoLinkTextView"
             android:background="@drawable/gradient_verticalrounded"
             android:layout_width="wrap_content"

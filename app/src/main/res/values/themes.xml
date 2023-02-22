@@ -29,5 +29,15 @@
         <item name="android:background">@drawable/gradient_horizontal</item>
 
     </style>
+    
+    <style name="roundedImgView">
+
+        <item name="cornerFamily"> rounded </item>
+
+        <item name="cornerSize"> 10dp </item>
+        
+        <item name="color" >#00FFFFFF</item>
+
+    </style>
 
 </resources>
