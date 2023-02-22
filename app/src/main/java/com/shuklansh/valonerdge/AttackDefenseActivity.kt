@@ -91,13 +91,13 @@ class AttackDefenseActivity : AppCompatActivity() {
             intent.putExtra("mapname" , mapname)
             intent.putExtra("side" , attacktextfb)
             startActivity(intent)
-            Toast.makeText(this@AttackDefenseActivity,"${mapname} attack side pressed" , Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@AttackDefenseActivity,"${mapname} attack side pressed" , Toast.LENGTH_SHORT).show()
         }
         defense.setOnClickListener{
             intent.putExtra("mapname" , mapname)
             intent.putExtra("side" , defensetextfb)
             startActivity(intent)
-            Toast.makeText(this@AttackDefenseActivity,"${mapname} defense side pressed" , Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@AttackDefenseActivity,"${mapname} defense side pressed" , Toast.LENGTH_SHORT).show()
         }
 
 
