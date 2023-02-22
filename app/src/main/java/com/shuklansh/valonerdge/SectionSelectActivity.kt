@@ -48,18 +48,12 @@ class SectionSelectActivity : AppCompatActivity() {
         listOfSection = getSiteSectionData()
         siteSectionRecyclerView.adapter = SiteSelectAdapter(this,listOfSection , mapname , side)
 
-
-
     }
-
     private fun getSiteSectionData(): MutableList<String> {
-
         reference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 //                attacktextfb = snapshot.child("sova").child(mapname).child("attack").key as String
 //                defensetextfb = snapshot.child("sova").child(mapname).child("defense").key as String
-
-
 
                 for (eachMap in snapshot.child("sova").child(mapname).child(side).children){
                     val nameOfSection = eachMap.key
