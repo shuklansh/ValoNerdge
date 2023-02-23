@@ -33,7 +33,6 @@
 
                 android:foreground="@drawable/gradient_horizontal"
 
-                android:scaleType="fitCenter"
                 app:shapeAppearanceOverlay="@style/roundedImgView" />
 
             <TextView
@@ -64,7 +63,6 @@
 
                 app:shapeAppearanceOverlay="@style/roundedImgView"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
 
                 android:foreground="@drawable/gradient_horizontal"
 
@@ -99,7 +97,6 @@
 
                 app:shapeAppearanceOverlay="@style/roundedImgView"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
 
                 android:foreground="@drawable/gradient_horizontal"
 
